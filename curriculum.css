@@ -10,9 +10,7 @@
 	padding-inline: var(--size-3);
 	& > :first-child {
 		flex-grow: 1;
-		@media (min-width: 712px) {
-			max-inline-size: 445px;
-		}
+		@media (min-width: 712px) { max-inline-size: 445px; }
 		min-inline-size: 200px;
 	}
 	
@@ -112,9 +110,7 @@
 
 .card {
 	& + .card {margin-block-start: var(--size-3); }
-	& .card__title {
-		max-inline-size: 80ch;
-	}
+	& .card__title { max-inline-size: 80ch; }
 }
 
 .footer {

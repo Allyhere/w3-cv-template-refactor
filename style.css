@@ -109,8 +109,11 @@ body {
     display: flex;
 		column-gap: var(--size-3);
   }
+
   .separator { border-top: var(--border-size-1) solid var(--separator); }
+
   .shadow { box-shadow: var(--shadow-4); }
+
   .stack {
     display: grid;
     row-gap: var(--size-3);
