@@ -1,0 +1,21 @@
+{
+  "name": "w3-cv-template-refactor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "postcss-preset-env": "^7.8.3",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "open-props": "^1.5.3",
+    "postcss": "^8.4.20",
+    "postcss-jit-props": "^1.0.8"
+  }
+}
