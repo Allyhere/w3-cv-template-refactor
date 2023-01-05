@@ -95,6 +95,7 @@
 
 .list {
 	padding: 0;
+  justify-content: center;
 }
 
 .experience {
@@ -120,8 +121,8 @@
 }
 
 .footer {
+  grid-template-columns: max-content;
 	place-content: center;
-  grid-column: -1 / 1;
 	padding-block: var(--size-3);
 	margin-block-start: var(--size-3);
 	background: var(--teal-7);
@@ -129,7 +130,10 @@
 	text-align: center;
 	& .footer__text { color: currentColor; }
 	& .footer .list { column-gap: var(--size-2); }
-	& .footer__footnote { font-size: var(--font-size-0); }
+	& .footer__footnote {
+    inline-size: 60ch;
+    font-size: var(--font-size-0);
+  }
 }
 
 :is(

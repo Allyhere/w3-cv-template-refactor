@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="//cdnjs.cloudflare.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,15 +17,19 @@
     <main class="side-bar">
       <aside class="profile [ shadow ]">
         <header class="profile__header">
-          <img
-            src="https://source.unsplash.com/random/?person"
-            alt="Profile picture"
-            class="profile__img"
-            width="324"
-            height="216"
-          />
+          <picture>
+            <source type="image/webp" srcset="./profile.webp" />
+            <img
+              src="./profile.jpg"
+              alt="An black haired asian women portrait wearing a jeans jacket"
+              loading="lazy"
+              width="324"
+              height="216"
+              class="profile__img"
+            />
+          </picture>
           <h1 class="profile__title">
-            <span>Camilo Micheletto</span>
+            <span>Fulana Ciclana</span>
           </h1>
         </header>
         <address class="profile__info">
@@ -212,7 +217,7 @@
           </span>
         </li>
       </ul>
-      <p class="footer__footnote">Feito por Camilo</p>
+      <p class="footer__footnote">Feito por Camilo Micheletto - <a href="https://github.com/Allyhere/w3-cv-template-refactor">Link do repositório</a></p>
     </footer>
   </body>
 </html>
