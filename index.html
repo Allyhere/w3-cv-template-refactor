@@ -3,11 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>W3.CSS Template Refactored</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main class="side-bar">
+      <aside class="profile [ shadow ]">
+        <header class="profile__header">
+          <img
+            src="https://source.unsplash.com/random/?person"
+            alt="Profile picture"
+            class="profile__img"
+            width="324"
+            height="216"
+          />
+          <h1 class="profile__title">
+            <span>Camilo Micheletto</span>
+          </h1>
+        </header>
+        <address class="profile__info">
+          <ul class="list [ stack ]">
+            <li class="list__item [ inline ]">
+              <span class="fa fa-briefcase fa-fw [ icon ]"></span>
+              <p class="text">Designer</p>
+            </li>
+            <li class="list__item [ inline ]">
+              <span class="fa fa-home fa-fw [ icon ]"></span>
+              <p class="text">London, UK</p>
+            </li>
+            <li class="list__item [ inline ]">
+              <span class="fa fa-envelope fa-fw [ icon ]"></span>
+              <p class="text">ex@mail.com</p>
+            </li>
+            <li class="list__item [ inline ]">
+              <span class="fa fa-phone fa-fw [ icon ]"></span>
+              <p class="text">1224435534</p>
+            </li>
+          </ul>
+        </address>
+        <hr class="separator" />
+        <dl class="skillset [ stack ]">
+          <dt class="skillset__header [ title ]">
+            <span class="fa fa-asterisk fa-fw [ icon ]"></span>
+            Skills
+          </dt>
+          <dt class="skillset__title [ text ]">Adobe Photoshop</dt>
+          <dd class="skillset__percentage [ text ]">
+            <span class="skillset__bar" style="--width: 9">90%</span>
+          </dd>
+          <dt class="skillset__title [ text ]">Photography</dt>
+          <dd class="skillset__percentage [ text ]">
+            <span class="skillset__bar" style="--width: 8">80%</span>
+          </dd>
+          <dt class="skillset__title [ text ]">Illustrator</dt>
+          <dd class="skillset__percentage [ text ]">
+            <span class="skillset__bar" style="--width: 7.5">75%</span>
+          </dd>
+          <dt class="skillset__title [ text ]">Media</dt>
+          <dd class="skillset__percentage [ text ]">
+            <span class="skillset__bar" style="--width: 5">50%</span>
+          </dd>
+        </dl>
+        <dl class="skillset [ stack ]">
+          <dt class="skillset__header [ title ]">
+            <span class="fa fa-globe fa-fw [ icon ]"></span>
+            Languages
+          </dt>
+          <dt class="skillset__title [ text ]">English</dt>
+          <dd class="skillset__percentage [ text big ]">
+            <span class="skillset__bar" style="--width: 10">&nbsp;</span>
+          </dd>
+          <dt class="skillset__title [ text ]">Spanish</dt>
+          <dd class="skillset__percentage [ text big ]">
+            <span class="skillset__bar" style="--width: 5">&nbsp;</span>
+          </dd>
+          <dt class="skillset__title [ text ]">German</dt>
+          <dd class="skillset__percentage [ text big ]">
+            <span class="skillset__bar" style="--width: 2.5">&nbsp;</span>
+          </dd>
+        </dl>
+      </aside>
+      <div class="content [ stack ]">
+        <section class="experience [ shadow ]">
+          <h2 class="experience__title [ heading ]">
+            <span class="fa fa-suitcase fa-fw [ icon ]"></span>
+            Work Experience
+          </h2>
+          <ol class="experience__list [ stack ]">
+            <li class="experience__list-item card [ stack ]">
+              <h2 class="card__title [ title ]">
+                Front End Developer / w3schools.com
+              </h2>
+              <h3 class="card__period [ text ]">
+                <span class="fa fa-calendar fa-fw [ icon ]"></span>
+                Jan 2015 - <span class="current">Current</span>
+              </h3>
+              <p class="card__body">
+                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+            </li>
+            <li class="separator" aria-hidden="true"></li>
+            <li class="experience__list-item card [ stack ]">
+              <h2 class="card__title [ title ]">
+                Web Developer / something.com
+              </h2>
+              <h3 class="card__period [ text ]">
+                <span class="fa fa-calendar fa-fw [ icon ]"></span>
+                Mar 2012 - Dec 2014
+              </h3>
+              <p class="card__body">
+                Consectetur adipisicing elit. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+            </li>
+            <li class="separator" aria-hidden="true"></li>
+            <li class="experience__list-item card [ stack ]">
+              <h2 class="card__title [ title ]">
+                Graphic Designer / designsomething.com
+              </h2>
+              <h3 class="card__period [ text ]">
+                <span class="fa fa-calendar fa-fw [ icon ]"></span>
+                Jun 2010 - Mar 2012
+              </h3>
+              <p class="card__body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="experience [ shadow ]">
+          <h2 class="experience__title heading">
+            <span class="fa fa-certificate fa-fw [ icon ]"></span>
+            Education
+          </h2>
+          <ol class="experience__list [ stack ]">
+            <li class="experience__list-item card [ stack ]">
+              <h2 class="card__title [ title ]">W3Schools.com</h2>
+              <h3 class="card__period [ text ]">
+                <span class="fa fa-calendar fa-fw [ icon ]"></span>
+                Forever
+              </h3>
+              <p class="card__body">
+                Web Development! All I need to know in one place
+              </p>
+            </li>
+            <li class="separator" aria-hidden="true"></li>
+            <li class="experience__list-item card [ stack ]">
+              <h2 class="card__title [ title ]">London Business School</h2>
+              <h3 class="card__period [ text ]">
+                <span class="fa fa-calendar fa-fw [ icon ]"></span>
+                2013 - 2015
+              </h3>
+              <p class="card__body">Master Degree</p>
+            </li>
+            <li class="separator" aria-hidden="true"></li>
+            <li class="experience__list-item card [ stack ]">
+              <h2 class="card__title [ title ]">School of Coding</h2>
+              <h3 class="card__period [ text ]">
+                <span class="fa fa-calendar fa-fw [ icon ]"></span>
+                2010 - 2013
+              </h3>
+              <p class="card__body">Bachelor Degree</p>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+    <footer class="footer [ stack ]">
+      <p class="footer__text text">Find me on social media.</p>
+      <ul class="list [ inline ]">
+        <li class="list-item">
+          <span class="fa fa-facebook-official">
+            <span class="sr-only">Facebook</span>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="fa fa-instagram">
+            <span class="sr-only">Instagram</span>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="fa fa-snapchat">
+            <span class="sr-only">Snapchat</span>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="fa fa-pinterest-p">
+            <span class="sr-only">Pinterest</span>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="fa fa-twitter">
+            <span class="sr-only">Twitter</span>
+          </span>
+        </li>
+        <li class="list-item">
+          <span class="fa fa-linkedin">
+            <span class="sr-only">Linkedin</span>
+          </span>
+        </li>
+      </ul>
+      <p class="footer__footnote">Feito por Camilo</p>
+    </footer>
   </body>
 </html>
