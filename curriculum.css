@@ -8,6 +8,7 @@
   margin: 0 auto;
 	padding-block-start: var(--size-3);
 	padding-inline: var(--size-3);
+	overflow-x: hidden;
 	& > :first-child {
 		flex-grow: 1;
 		@media (min-width: 712px) { max-inline-size: 445px; }
