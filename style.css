@@ -4,12 +4,69 @@
 @import "open-props/normalize" layer(library);
 
 @import "curriculum.css" layer(curriculum);
+@import "open-props/colors-hsl";
+
+* {
+ /* light theme */
+ --brand-light: var(--teal-7);
+ --text1-light: var(--gray-6);
+ --text2-light: var(--gray-1);
+ --surface1-light: var(--gray-2);
+ --surface2-light: var(--gray-0);
+ --link-light: var(--teal-9);
+ --link-hover-light: var(--teal-11);
+ --separator-light: var(--gray-4);
+ --shadow-light: var(--gray-2-hsl);
+ 
+ /* dark theme */
+ --brand-dark: var(--teal-7);
+ --text1-dark: var(--gray-1);
+ --text2-dark: var(--gray-1);
+ --surface1-dark: var(--gray-11);
+ --surface2-dark: var(--gray-9);
+ --link-dark: var(--teal-9);
+ --link-hover-dark: var(--teal-11);
+ --separator-dark: var(--gray-2);
+ --shadow-dark: var(--gray-9-hsl);
+}
+
+:root {
+  color-scheme: light;
+  --brand: var(--brand-light);
+  --text1: var(--text1-light);
+  --text2: var(--text2-light);
+  --surface1: var(--surface1-light);
+  --surface2: var(--surface2-light);
+  --link: var(--link-light);
+  --link-hover: var(--link-hover-light);
+  --separator: var(--separator-light);
+  --shadow: var(--shadow-light);
+  
+  --velocity: 200ms ease-in;
+  @media (prefers-reduced-motion) { --velocity: linear; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --brand: var(--brand-dark);
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+    --surface1: var(--surface1-dark);
+    --surface2: var(--surface2-dark);
+    --link: var(--link-dark);
+    --link-hover: var(--link-hover-dark);
+    --separator: var(--separator-dark);
+    --shadow: var(--shadow-dark);
+  }
+}
+
 
 body {
   max-inline-size: 100vw;
   min-block-size: 100vh;
   overflow-x: hidden;
-  background-color: var(--gray-2);
+  background-color: var(--surface1);
 }
 
 @layer overrides {
@@ -53,7 +110,7 @@ body {
     display: flex;
 		column-gap: var(--size-3);
   }
-  .separator { border-top: var(--border-size-1) solid var(--gray-4); }
+  .separator { border-top: var(--border-size-1) solid var(--separator); }
   .shadow { box-shadow: var(--shadow-4); }
   .stack {
     display: grid;

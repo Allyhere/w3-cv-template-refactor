@@ -1,4 +1,4 @@
-:where(.heading, .title, .text) { color: var(--gray-6); }
+:where(.heading, .title, .text) { color: var(--text1); }
 
 .side-bar {
 	display: flex;
@@ -56,9 +56,9 @@
 			background:
 				linear-gradient(
 					to bottom,
-					hsl(0 0% 0% / 0) 0%,
-					hsl(0 0% 100% / 0.5) 50%,
-					hsl(0 0% 100% / 1) 100%
+					hsl(var(--shadow) / 0) 0%,
+					hsl(var(--shadow) / 50%) 50%,
+					hsl(var(--shadow) / 100%) 100%
 				);
 		}
 	}
@@ -75,7 +75,7 @@
 		height: var(--height, 18px);
 		overflow: hidden;
 		position: relative;
-		background-color: var(--gray-2);
+		background-color: var(--surface1);
 		border-radius: var(--radius-6);
 		&.big { --height: 24px; }
 	}
@@ -85,18 +85,15 @@
 		position: absolute;
 		left: 0; top: 50%;
 		transform: translateY(-50%);
-		background-color: var(--teal-7);
+		background-color: var(--brand);
 		border-radius: var(--radius-round);
-		color: var(--gray-1);
+		color: var(--text2);
 		font-size: var(--font-size-0);
 		text-align: center;
 	}
 }
 
-.list {
-	padding: 0;
-  justify-content: center;
-}
+.list { padding: 0; }
 
 .experience {
 	padding: var(--size-3);
@@ -107,9 +104,9 @@
 
 .current {
 	padding: 2px var(--size-1);
-	background-color: var(--teal-7);
+	background-color: var(--brand);
 	border-radius: var(--radius-1);
-	color: var(--gray-2);
+	color: var(--text2);
 	font-weight: var(--font-weight-6);
 }
 
@@ -125,23 +122,31 @@
 	place-content: center;
 	padding-block: var(--size-3);
 	margin-block-start: var(--size-3);
-	background: var(--teal-7);
-	color: var(--gray-1);
+	background: var(--brand);
+	color: var(--text2);
 	text-align: center;
 	& .footer__text { color: currentColor; }
-	& .footer .list { column-gap: var(--size-2); }
+	& .list {
+    column-gap: var(--size-2);
+    justify-content: center;
+  }
 	& .footer__footnote {
     inline-size: 60ch;
     font-size: var(--font-size-0);
   }
 }
 
+.link {
+  color: var(--link);
+  &:hover { color: var(--link-hover); }
+}
+
 :is(
 	.icon,
 	.card__period
-) { color: var(--teal-7); }
+) { color: var(--brand); }
 
 :is(
 	.profile,
 	.content > *
-) { background-color: var(--gray-0); }
+) { background-color: var(--surface2); }
